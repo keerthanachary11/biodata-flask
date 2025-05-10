@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Biodata</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #194b1a;
+            font-size: 36px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ec9090;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Unordered List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .detail {
+            font-size: 18px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .detail strong {
+            color: #124214;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #f7d2d2;
+        }
+
+        .contact-section h3 {
+            color: #0e0d0d;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: #035305;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: #1a551d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .detail {
+                font-size: 16px;
+            }
+
+            .contact-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biodata</h1>
+        <ul>
+            <li class="detail"><strong>Name:</strong> {{ name }}</li>
+            <li class="detail"><strong>Age:</strong> {{ age }}</li>
+            <li class="detail"><strong>University:</strong> {{ university }}</li>
+            <li class="detail"><strong>Course:</strong> {{ course }}</li>
+            <li class="detail"><strong>Department:</strong> {{ department }}</li>
+        </ul>
+
+        <div class="contact-section">
+            <h3>Contact</h3>
+            <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+            <p><strong>Social Media:</strong> <a href="{{ social_media }}" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
